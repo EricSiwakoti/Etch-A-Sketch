@@ -1,0 +1,52 @@
+body {
+  min-height: 100vh;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  background: white;
+  background: url(https://images.pexels.com/photos/2246476/pexels-photo-2246476.jpeg);
+  background-size: cover;
+}
+
+canvas {
+  border: 20px solid darkgreen;
+  border-radius: 15px;
+  /* Set the width and height to half the actual size so it doesn't look pixelated  */
+  width: 50%;
+  height: 50%;
+  background: white;
+}
+
+button.shake {
+  border: 10px solid blue;
+  border-radius: 8px;
+  background-color: blue;
+  color: white;
+}
+
+canvas.shake {
+  animation: shake 0.5s linear 1;
+}
+
+@keyframes shake {
+  10%,
+  90% {
+    transform: translate3d(-1px, 0, 0);
+  }
+
+  20%,
+  80% {
+    transform: translate3d(2px, 0, 0);
+  }
+
+  30%,
+  50%,
+  70% {
+    transform: translate3d(-4px, 0, 0);
+  }
+
+  40%,
+  60% {
+    transform: translate3d(4px, 0, 0);
+  }
+}
