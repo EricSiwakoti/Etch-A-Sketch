@@ -12,8 +12,8 @@ canvas {
   border: 20px solid darkgreen;
   border-radius: 15px;
   /* Set the width and height to half the actual size so it doesn't look pixelated  */
-  width: 50%;
-  height: 50%;
+  width: 540px;
+  height: 360px;
   background: white;
 }
 
